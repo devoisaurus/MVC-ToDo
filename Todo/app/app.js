@@ -1,16 +1,16 @@
 ﻿(function() {
-    angular.module('todo', ['ng-route']);
+    angular.module("todo", ["ngRoute"]);
 
-    angular.module('todo')
-    .controller('homeController', ['$scope', function($scope) {
+    angular.module("todo")
+    .controller("homeController", ["$scope", function($scope) {
             $scope.welcome = "Hello, world";
         }]);
 
     //minified
-    angular.module('todo')
-        .controller('todoController', todoController);
+    angular.module("todo")
+        .controller("todoController", todoController);
 
-    todoController.$inject = ['$scope'];
+    todoController.$inject = ["$scope"];
 
     function todoController($scope) {
         

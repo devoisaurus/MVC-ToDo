@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body ng-app="todo">
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -26,8 +26,9 @@
         </div>
     </div>
 </div>
-<div class="container body-content">
-    <hr />
+<div class="container body-content" ng-controller="homeController">
+    {{welcome}}
+    <hr/>
     <footer>
         <p>&copy; @DateTime.Now.Year - to DO app - a devoisaurus production</p>
     </footer>
@@ -36,5 +37,6 @@
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
 @Scripts.Render("~/bundles/angular")
+@Scripts.Render("~/bundles/app")
 </body>
 </html>

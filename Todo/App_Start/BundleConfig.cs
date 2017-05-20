@@ -31,6 +31,9 @@ namespace Todo
                 "~/Scripts/angular.js",
                 "~/Scripts/angular-route.js"
                 ));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/app/app.js"));
         }
     }
 }

@@ -188,7 +188,11 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\addController.js" />
     <Content Include="app\app.js" />
+    <Content Include="app\detailController.js" />
+    <Content Include="app\homeController.js" />
+    <Content Include="app\listController.js" />
     <Content Include="app\partials\add.html" />
     <Content Include="app\partials\detail.html" />
     <Content Include="app\partials\list.html" />

@@ -11,7 +11,7 @@
 
         $http.get("/api/todo")
             .then(function(res) {
-                console.log(res);
+                $scope.list = res.data;
             });
     }
 

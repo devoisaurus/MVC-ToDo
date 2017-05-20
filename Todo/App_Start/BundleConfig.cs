@@ -33,7 +33,11 @@ namespace Todo
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/app/app.js"));
+                "~/app/app.js",
+                "~/app/homeController.js",
+                "/~/app/listController.js",
+                "/~/app/detailController.js",
+                "/~app/addController.js"));
         }
     }
 }

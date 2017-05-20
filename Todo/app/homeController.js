@@ -1,7 +1,9 @@
 ﻿(function () {
     angular.module("todo")
         .controller("homeController", ["$scope", function ($scope) {
-            $scope.welcome = "Hello, world";
+            $scope.welcome = "home controller works";
+
+
         }]);
 })();
 

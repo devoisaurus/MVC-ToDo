@@ -5,7 +5,7 @@
     addController.$inject = ["$scope"];
 
     function addController($scope) {
-
+        $scope.welcome = "Add controller works";
     }
     
 })();

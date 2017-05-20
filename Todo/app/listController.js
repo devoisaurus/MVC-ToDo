@@ -5,7 +5,7 @@
     listController.$inject = ["$scope"];
 
     function listController($scope) {
-        scope.welcome = "list controller works";
+        $scope.welcome = "list controller works";
     }
 
 })();

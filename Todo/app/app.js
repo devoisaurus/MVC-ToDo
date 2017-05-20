@@ -6,17 +6,17 @@
             $routeProvider
                 .when("/list",
                     {
-                        templateUrl: "partials/list.html",
+                        templateUrl: "app/partials/list.html",
                         controller: "listController"
                     })
                 .when("/add",
                     {
-                        templateUrl: "partials/add.html",
+                        templateUrl: "app/partials/add.html",
                         controller: "addController"
                     })
                 .when("/detail",
                     {
-                        templateUrl: "partials/detail.html",
+                        templateUrl: "app/partials/detail.html",
                         controller: "detailController"
                     });
         }]);

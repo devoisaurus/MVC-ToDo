@@ -5,7 +5,7 @@
     detailController.$inject = ["$scope"];
 
     function detailController($scope) {
-        scope.welcome = "Detail controller works";
+        $scope.welcome = "Detail controller works";
     }
     
 })();

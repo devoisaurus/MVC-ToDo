@@ -9,7 +9,7 @@ namespace Todo.Controllers
 {
     public class ToDoController : ApiController
     {
-        [Route("/todo")]
+        [Route("api/todo")]
         public List<string> GetAll()
         {
             return new List<string> { "hello", "my", "name", "is", "todo"};

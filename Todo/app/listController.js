@@ -2,10 +2,17 @@
     angular.module("todo")
         .controller("listController", listController);
 
-    listController.$inject = ["$scope"];
+    listController.$inject = ["$scope", "$http"];
 
-    function listController($scope) {
+    function listController($scope, $http) {
         $scope.welcome = "list controller works";
+
+        $scope.list = [];
+
+        $http.get("/api/todo")
+            .then(function(res) {
+                console.log(res);
+            });
     }
 
 })();

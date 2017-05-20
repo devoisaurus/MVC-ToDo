@@ -8,11 +8,31 @@
 
     //minified
     angular.module("todo")
-        .controller("todoController", todoController);
+        .controller("listController", listController);
 
-    todoController.$inject = ["$scope"];
+    listController.$inject = ["$scope"];
 
-    function todoController($scope) {
+    function listController($scope) {
         
     }
+
+    angular.module("todo")
+        .controller("detailController", detailController);
+
+    detailController.$inject = ["$scope"];
+
+    function detailController($scope) {
+
+    }
+
+    angular.module("todo")
+        .controller("addController", addController);
+
+    addController.$inject = ["$scope"];
+
+    function addController($scope) {
+
+    }
+
+
 })();
